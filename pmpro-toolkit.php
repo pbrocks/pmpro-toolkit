@@ -248,7 +248,7 @@ function pmprodev_admin_init() {
 	add_settings_field( 'ipn-debug', __( 'Gateway Callback Debug Email', 'pmpro-toolkit' ), 'pmprodev_settings_ipn_debug', 'pmprodev', 'pmprodev-gateway' );
 	add_settings_field( 'checkout_debug_email', __( 'Send Checkout Debug Email', 'pmpro-toolkit' ), 'pmprodev_settings_checkout_debug_email', 'pmprodev', 'pmprodev-gateway' );
 
-	add_settings_field( 'view_as_enabled', __( 'Enable \"View As\" feature', 'pmpro-toolkit' ), 'pmprodev_settings_view_as_enabled', 'pmprodev', 'pmprodev-view-as' );
+	add_settings_field( 'view_as_enabled', __( 'Enable "View As" feature', 'pmpro-toolkit' ), 'pmprodev_settings_view_as_enabled', 'pmprodev', 'pmprodev-view-as' );
 }
 add_action('admin_init', 'pmprodev_admin_init');
 

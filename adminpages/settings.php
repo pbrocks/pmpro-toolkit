@@ -72,7 +72,7 @@ function pmprodev_settings_cron_expire_memberships() {
 	}
 ?>
 >
-	<p class="description"><?php echo esc_html_e( 'Check to disable.', 'pmpro-toolkit' ); ?></p>
+	<label for="expire_memberships"><?php echo esc_html_e( 'Check to disable the script that checks for expired memberships.', 'pmpro-toolkit' ); ?></label>
 	<?php
 }
 function pmprodev_settings_cron_expiration_warnings() {
@@ -84,7 +84,7 @@ function pmprodev_settings_cron_expiration_warnings() {
 		echo 'checked="true"';}
 ?>
 >
-	<p class="description"><?php echo esc_html_e( 'Check to disable.', 'pmpro-toolkit' ); ?></p>
+	<label for="expiration_warnings"><?php echo esc_html_e( 'Check to disable the script that sends expiration warnings.', 'pmpro-toolkit' ); ?></label>
 	<?php
 }
 function pmprodev_settings_cron_credit_card_expiring() {
@@ -96,7 +96,7 @@ function pmprodev_settings_cron_credit_card_expiring() {
 		echo 'checked="true"';}
 ?>
 >
-	<p class="description"><?php echo esc_html_e( 'Check to disable.', 'pmpro-toolkit' ); ?></p>
+	<label for="credit_card_expiring"><?php echo esc_html_e( 'Check to disable the script that checks for expired credit cards.', 'pmpro-toolkit' ); ?></label>
 	<?php
 }
 
@@ -119,12 +119,8 @@ function pmprodev_settings_checkout_debug_email() {
 function pmprodev_settings_view_as_enabled() {
 	global $pmprodev_options;
 	?>
-	<input id="view_as_enabled" type="checkbox"  name="pmprodev_options[view_as_enabled]" value="1" 
-	<?php
-	if ( ! empty( $pmprodev_options['view_as_enabled'] ) ) {
-		echo 'checked="true"';}
-?>
->
+	<input id="view_as_enabled" type="checkbox"  name="pmprodev_options[view_as_enabled]" value="1" <?php checked( $pmprodev_options['view_as_enabled'], 1 ); ?> />
+	<label for="view_as_enabled"><?php _e( 'Check to enable the View As feature.', 'pmpro-toolkit' ); ?></label>
 	<?php
 }
 

@@ -355,41 +355,33 @@
 
 		<hr />		
 		<p>
-			<input type="checkbox" id="move_level" name="move_level" value="1" /> 
-			<label for="move_level">
+			<input type="checkbox" id="move_level" name="move_level" value="1" />			
 			<?php
 			echo esc_html_e( 'Change all members with level ID', 'pmpro-toolkit' );
 ?>
  <input type="text" name="move_level_a" value="" size="4" /> to level ID <input type="text" name="move_level_b" value="" size="4" />. <?php echo esc_html_e( 'Will NOT cancel any recurring subscriptions.', 'pmpro-toolkit' ); ?>
-			</label>
 		</p>
 
 		<hr />
 		<p>
-			<input type="checkbox" id="give_level" name="give_level" value="1" /> 
-			<label for="give_level">
-				<?php echo esc_html_e( 'Give all non-members level ID ', 'pmpro-toolkit' ); ?><input type="text" name="give_level_id" value="" size="4" />. <?php echo esc_html_e( 'Set the start date to <input type="text" name="give_level_startdate" value="" size="10" /> (YYYY-MM-DD) and set the end date to ', 'pmpro-toolkit' ); ?><input type="text" name="give_level_enddate" value="" size="10" /> (optional, YYYY-MM-DD). 
-			</label>
+			<input type="checkbox" id="give_level" name="give_level" value="1" /> 			
+			<?php echo esc_html_e( 'Give all non-members level ID ', 'pmpro-toolkit' ); ?><input type="text" name="give_level_id" value="" size="4" />. <?php echo esc_html_e( 'Set the start date to <input type="text" name="give_level_startdate" value="" size="10" /> (YYYY-MM-DD) and set the end date to ', 'pmpro-toolkit' ); ?><input type="text" name="give_level_enddate" value="" size="10" /> (optional, YYYY-MM-DD).			
 			<br/ ><small><?php echo esc_html_e( 'This only gives users\' the level via the database and does NOT fire any pmpro_change_membership_level hooks.', 'pmpro-toolkit' ); ?></small>
 		</p>
 
 		<hr />
 		<p>
-			<input type="checkbox" id="cancel_level" name="cancel_level" value="1" /> 
-			<label for="cancel_level">
+			<input type="checkbox" id="cancel_level" name="cancel_level" value="1" /> 			
 			<?php
 			echo esc_html_e( 'Cancel all members with level ID', 'pmpro-toolkit' );
 ?>
  <input type="text" name="cancel_level_id" value="" size="4" />. <?php echo esc_html_e( 'WILL also cancel any recurring subscriptions.', 'pmpro-toolkit' ); ?>
-			</label>
 		</p>
 
 		<hr />
 		<p>
 			<input type="checkbox" id="copy_memberships_pages" name="copy_memberships_pages" value="1" /> 
-			<label for="copy_memberships_pages">
-				<?php echo esc_html_e( 'Make all pages that require level ID', 'pmpro-toolkit' ); ?> <input type="text" name="copy_memberships_pages_a" value="" size="4" /> <?php echo esc_html_e( 'also require level ID', 'pmpro-toolkit' ); ?> <input type="text" name="copy_memberships_pages_b" value="" size="4" />.
-			</label>
+			<?php echo esc_html_e( 'Make all pages that require level ID', 'pmpro-toolkit' ); ?> <input type="text" name="copy_memberships_pages_a" value="" size="4" /> <?php echo esc_html_e( 'also require level ID', 'pmpro-toolkit' ); ?> <input type="text" name="copy_memberships_pages_b" value="" size="4" />.			
 		</p>
 
 		<hr />
