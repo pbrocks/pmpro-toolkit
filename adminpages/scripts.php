@@ -175,13 +175,12 @@
 	}
 
 	//moving level
-	if($move_level)
-	{
+	if($move_level) {
 		$from_level_id = intval($_REQUEST['move_level_a']);
 		$to_level_id = intval($_REQUEST['move_level_b']);
 
 		//make sure both levels are > 0
-		if($from_level_id < 1 || $to_level_id < 1)
+		if($from_level_id < 1 || $to_level_id < 1) {
 		?>
 		<hr /><p><strong>
 		<?php
@@ -193,18 +192,15 @@
 			//get user ids to run hook later
 			$user_ids = $wpdb->get_col("SELECT user_id FROM $wpdb->pmpro_memberships_users WHERE membership_id = '" . $from_level_id . "' AND status = 'active' ");
 
-			if(empty($user_ids))
-			{
-		?>
-		<hr /><p><strong>
-		<?php
-		echo sprintf( __( 'Couldn\'t find users with level ID ', 'pmpro-toolkit' ), $from_level_id );
-		?>
-		</strong></p>
-		<?php
-			}
-			else
-			{
+			if(empty($user_ids)) {
+			?>
+			<hr /><p><strong>
+			<?php
+			echo sprintf( __( 'Couldn\'t find users with level ID ', 'pmpro-toolkit' ), $from_level_id );
+			?>
+			</strong></p>
+			<?php
+			} else {
 				//update users in DB
 				$wpdb->query("UPDATE $wpdb->pmpro_memberships_users SET membership_id = " . $to_level_id . " WHERE membership_id = " . $from_level_id . " AND STATUS =  'active';");
 
@@ -223,7 +219,7 @@
 				}
 
 				echo "</p>";
-			// }
+			}
 		}
 	}
 
