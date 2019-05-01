@@ -2,8 +2,8 @@
 Contributors: strangerstudios, jessica o
 Tags: paid memberships pro, pmpro, debug, developer, toolkit
 Requires at least: 4
-Tested up to: 4.9.5
-Stable tag: .5.1
+Tested up to: 5.1.1
+Stable tag: .5.2
 
 Adds various tools and settings to aid in the development of Paid Memberships Pro enabled websites.
 
@@ -29,6 +29,11 @@ Features:
 Please post it in the issues section of GitHub and we'll fix it as soon as we can. Thanks for helping. https://github.com/strangerstudios/pmpro-toolkit/issues
 
 == Changelog ==
+= .5.2 =
+* BUG FIX: Fixed the Cancel All Members script. (Thanks, Jessica Thomas)
+* BUG FIX: Fixed issue on the scripts page where clicking on text inputs would check/uncheck the cooresponding checkbox. (Thanks, Jessica Thomas)
+* ENHANCEMENT: Bit of code cleanup.
+
 = .5.1 =
 * ENHANCEMENT: Ready for translation.
 * ENHANCEMENT: Added Spanish Translation.
