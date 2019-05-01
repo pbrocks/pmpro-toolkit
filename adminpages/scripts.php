@@ -266,7 +266,7 @@
 	//cancelling a lvel
 	if($cancel_level)
 	{
-		$cancel_level_id = intval($_POST['cancel_level']);
+		$cancel_level_id = intval($_POST['cancel_level_id']);
 
 		//get user ids to cancel
 		$user_ids = $wpdb->get_col("SELECT user_id FROM $wpdb->pmpro_memberships_users WHERE membership_id = '" . $cancel_level_id . "' AND status = 'active' ");
@@ -384,7 +384,7 @@
 			<?php
 			echo esc_html_e( 'Cancel all members with level ID', 'pmpro-toolkit' );
 ?>
- <input type="text" name="move_levels_a" value="" size="4" />. <?php echo esc_html_e( 'WILL also cancel any recurring subscriptions.', 'pmpro-toolkit' ); ?>
+ <input type="text" name="cancel_level_id" value="" size="4" />. <?php echo esc_html_e( 'WILL also cancel any recurring subscriptions.', 'pmpro-toolkit' ); ?>
 			</label>
 		</p>
 
